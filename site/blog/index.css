@@ -1,0 +1,24 @@
+@import url('/global.css');
+
+a:link,
+a:visited {
+  color: var(--color);
+  text-decoration: none;
+}
+
+a:hover>.blog-title,
+a:hover>*>time {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.blog-post {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px var(--color) solid;
+  border-radius: 5px;
+}
+
+.blog-post:has(a:hover) {
+  border-color: var(--link-color);
+}

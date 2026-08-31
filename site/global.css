@@ -1,0 +1,75 @@
+@import url('variables.css');
+
+/* A small reset / sensible defaults */
+* {
+  box-sizing: border-box;
+  /* border: 1px red dashed; */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  /* font-size: var(--base-font); */
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  margin: 0;
+  padding: 1rem;
+}
+
+.hero-title::before {
+  content: "~/";
+}
+
+.hero-title::after {
+  content: " $";
+}
+
+header>nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  font-weight: bold;
+
+  a {
+    display: inline-block;
+    padding: 1ch 2ch 1ch 2ch;
+  }
+
+  a::before {
+    content: "> "
+  }
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--color);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex-grow: 1;
+}

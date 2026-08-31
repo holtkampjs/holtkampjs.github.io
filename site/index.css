@@ -1,0 +1,19 @@
+@import url('global.css');
+
+.home-content {
+  padding: 1em;
+
+  *>a {
+    text-decoration: underline;
+  }
+
+  *>a:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+  }
+
+  *>a:visited {
+    text-decoration: underline;
+    color: purple;
+  }
+}
