@@ -1,0 +1,15 @@
+:root {
+  --background-color: hsl(0 0% 80%);
+  --color: hsl(0 0% 10%);
+  --primary: hsl(112 50% 40%);
+  --secondary: hsl(60 80% 40%);
+  --tertiary: hsl(0 80% 40%);
+  --link-color: hsl(215 100% 63%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: hsl(0 0% 0%);
+    --color: hsl(87 100% 30%);
+  }
+}

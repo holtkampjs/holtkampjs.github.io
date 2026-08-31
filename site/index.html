@@ -9,19 +9,47 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>holtkampjs</title>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
   <header>
-    <h1>Home</h1>
+    <div class="hero">
+      <a href="/">
+        <h1 class="hero-title"></h1>
+      </a>
+    </div>
     <nav>
       <a href="/" aria-current="page">Home</a>
+      <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
     </nav>
   </header>
 
   <main>
-    <p>Home page. Just getting going.</p>
+    <section class="home-content">
+      <h2>I know this site isn't great</h2>
+      <p>I'm working on it. So far, this site has only HTML and CSS. I'm not pulling in any external libraries as of
+        now.</p>
+      <p>The goal of this exercise is to practice <a
+          href="https://developer.mozilla.org/en-US/curriculum/core/semantic-html/">Semantic HTML</a> and organizing my
+        CSS. I know it's not pretty, but it's a start.</p>
+      <p>I've spent time working on websites in React and Next.js, as well as JQuery. I know there are static site
+        generators such as MkDocs, Hugo, and Jekyll, which would make my life easier in this endeavor, but easy is not
+        the goal. I want to learn how to utilize what is already available in the browser. Avoiding the addition of
+        Javascript until absolutely necessary or in a fitting scenario.</p>
+      <p>I've always wanted to start from Vanilla and build something I can be proud of. So far it's not there, and the
+        shell-like theme is just a spur of the moment idea.</p>
+      <p>My goals for this site include:</p>
+      <ul>
+        <li>Document the process I went through to learn this at: <a href="/blog/creating-my-personal-site/">Blog
+            &gt; Creating my personal site</a></li>
+        <li>Fix the nav bar so it's less ugly</li>
+        <li>Learn to create custom HTML elements with Javascript, when appropriate</li>
+        <li>End up with a place where I can write about my projects, adventures, and anything that comes to mind so that
+          they can be shared with others</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
