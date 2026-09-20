@@ -1,0 +1,14 @@
+@import url('/global.css');
+
+main {
+  display: flexbox;
+
+  .entry {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px var(--color) solid;
+    border-radius: 5px;
+  }
+}
